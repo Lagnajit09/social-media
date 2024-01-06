@@ -3,14 +3,16 @@ import "firebase/compat/firestore";
 import "firebase/compat/auth";
 import "firebase/compat/storage";
 
+
+//The values are not same as I used in the app for security purposes.
 const firebaseApp = firebase.initializeApp({
-  apiKey: "AIzaSyADlKNCHnbYCuGKs73D6ENbToV2Kfk96UE",
-  authDomain: "ls-book.firebaseapp.com",
-  projectId: "ls-book",
-  storageBucket: "ls-book.appspot.com",
-  messagingSenderId: "883649431057",
-  appId: "1:883649431057:web:f9c0b44534a5be1f6fd3b0",
-  measurementId: "G-J3Y0L19Q62",
+  apiKey: "AIzaSyADlKNCHnbYCuGKs73D6ENbToV2Kfk96UZZ",
+  authDomain: "socialmedia.firebaseapp.com",
+  projectId: "socialmedia",
+  storageBucket: "socialmedia.appspot.com",
+  messagingSenderId: "883649431099",
+  appId: "1:813649420057:web:f9c0b44534a5be1f6fkn8s",
+  measurementId: "G-J3Y0L1KS879",
 });
 
 const db = firebaseApp.firestore();
