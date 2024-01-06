@@ -1,0 +1,23 @@
+.nav__bottomElements{
+    display: none;
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 1280px) {
+    .nav__bottomElements {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        padding: 10px 20px 10px;
+        border-top: 1px solid lightgray;
+        z-index: 1;
+    }
+    .nav__bottomElement{
+        margin-right: 43px;
+    }
+}

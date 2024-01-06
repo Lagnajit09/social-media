@@ -1,0 +1,128 @@
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    -webkit-box-shadow: 0px 17px 22px -12px rgba(185,185,185,0.19); 
+    box-shadow: 0px 17px 22px -12px rgba(185,185,185,0.19);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+.navElements__left{
+    display: flex;
+    align-items: center;
+}
+.navElements__right{
+    padding-right: 20px;
+}
+.nav__logo{
+    font-family: 'Lobster', cursive;
+    color: #036BBF;
+    cursor: pointer;
+}
+.search__container{
+    display: flex;
+    align-items: center;
+    background-color: #F0F2F5;
+    border-radius: 30px;
+    padding: 8px;
+    margin-left: 20px;
+    width: 100%;
+}
+.search__container img{
+    flex: 0;
+    cursor: pointer;
+}
+.search__container .search__btn{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.nav__search{
+    flex: 1;
+    border: none;
+    outline:none;
+    background-color: #F0F2F5;
+}
+.nav__icons{
+    max-width: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.nav__profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 300px;
+    background-color: white;
+    padding: 10px;
+    margin-top: 70px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    -webkit-box-shadow: 0px 6px 15px 0px rgba(164,164,164,0.53); 
+    box-shadow: 0px 6px 15px 0px rgba(164,164,164,0.53);
+    z-index: 1;
+}
+.nav__profileIcons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.test{
+    display: flex;
+    align-items: center;
+}
+.nav__profileIcons:hover{
+    background-color: rgb(242, 242, 242);
+}
+.nav__profileUser{
+    margin-bottom: 20px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(210,210,210,0.38); 
+    box-shadow: 0px 0px 15px 5px rgba(210,210,210,0.38);
+}
+.nav__profileIcons h3{
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.nav__profileIcon{
+    background-color: rgb(202, 202, 202);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 1280px) {
+    .Navbar{
+        align-items: start;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .navElements__left{
+        flex-direction: column;
+        align-items: start;
+    }
+    .nav__search{
+        margin-left: 0;    }
+    .nav__icons{
+        margin-right: 5px;
+    }
+    .nav__profile{
+        width: 50%;
+        right: 40px;
+        margin-right: 10px;
+    }
+}

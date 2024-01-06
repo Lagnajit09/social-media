@@ -1,0 +1,91 @@
+.home__container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 30%;
+    margin: 0 auto 0px;
+}
+
+.new__post {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+.new__post .imageupload__progress{
+    width: 98%;
+    margin-bottom: 10px;
+}
+.new__post h1{
+    color: #036BBF;
+    margin-bottom: 20px;
+}
+.new__post .post__caption{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    color: rgb(100, 100, 100);
+    background-color: rgb(233, 233, 233);
+    border: 1px solid rgb(228, 227, 227);
+    border-radius: 20px;
+}
+.new__post .post__image{
+    display: flex;
+    align-content: center;
+    justify-content: start;
+}
+.new__post .post__image input{
+    display: none;
+}
+.new__post .post__image img{
+    margin-right: 5px;
+}
+.new__post .post__image label{
+    background-color: #036BBF;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.post__opt{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+.post__opt .post__btn{
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 20px;
+    width: 15%;
+    background-color: #036BBF;
+    color: white;
+    font-size: 13px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 1280px) {
+    .home__container{
+        width: 100%;
+        overflow-x: auto;
+        margin-bottom: 30px;
+    }
+    .new__post{
+        width: 88%;
+        padding: 20px;
+    }
+    .post__opt .post__btn{
+        padding: 5px;
+    }
+}

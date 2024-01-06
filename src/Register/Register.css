@@ -1,0 +1,172 @@
+.login-container {
+    background-color: rgb(193, 190, 255);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.mobile__nav{
+    display: none;
+}
+.card{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    border-radius: 10px;
+    min-height: 400px;
+    overflow: hidden;
+}
+.card-left{
+    flex: 1;
+    background: linear-gradient(rgba(39,11,96,0.5), rgba(39,11,96,0.5)), url("https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center;
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+}
+.card-left h1{
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1;
+}
+.card-left span{
+    font-size: 14px;
+}
+.card-left button{
+    background-color: rgb(193, 190, 255);
+    color: white;
+    width: 50%;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.card-left button:hover{
+    background-color: white;
+    color: rebeccapurple;
+}
+.card-right{
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.card-right form{
+    display: flex;
+    flex-direction: column;
+}
+.card-right input{
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+}
+.card-right .input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.card-right .input p {
+    font-size: 13px;
+}
+.input.invalidUsername input{
+    border: 1px solid red;
+    background: #fbdada;
+}
+.input.invalidEmail input{
+    border: 1px solid red;
+    background: #fbdada;
+}
+.input.invalidPassword input{
+    border: 1px solid red;
+    background: #fbdada;
+}
+.error{
+    color: red;
+    font-size: 13px;
+    display: none;
+}
+.errorUsernameMsg{
+    display: block;
+}
+.errorEmailMsg{
+    display: block;
+}
+
+.errorPasswordMsg{
+    display: block;
+}
+.card-right button{
+    width: 50%;
+    background-color: rebeccapurple;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.card-right button:hover{
+    background-color: rgb(235, 218, 252);
+    color: rebeccapurple;
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 1280px){
+
+    .register__div{
+        background-color: rgb(206, 206, 206);
+    }
+    .card{
+        width: 90%;
+        overflow: hidden;
+        min-height: 500px;
+    }
+    .card-left {
+        display: none;
+    }
+    .card-right{
+        justify-content:space-evenly;
+    }
+    .card-right .input{
+        margin-bottom: 30px;
+    }
+    .login-container{
+        display: block;
+        background-color: lightgray;
+        padding-top: 150px;
+        padding-bottom: 250px;
+        max-height: 570px;
+        margin-bottom: 0;
+    }
+    .mobile__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        width: 94%;
+    }
+    .mobile__nav button{
+        width: 20%;
+        background-color: rebeccapurple;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        border: none;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+}

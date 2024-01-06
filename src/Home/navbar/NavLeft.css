@@ -1,0 +1,46 @@
+.leftNavbar{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 80px;
+    width: 20%;
+    min-height: 100vh;
+    position: fixed;
+}
+.leftNavbar:hover{
+    border-right: 8px solid rgb(221, 221, 221);
+}
+.nav__elements{
+    display: flex;
+    align-content: center;
+    padding: 15px 15px 15px 10px;
+}
+.nav__elements img{
+    background-color: rgb(210, 210, 210);
+    border-radius: 50%;
+}
+.nav__elements:hover{
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+    border-radius: 10px;
+}
+.nav__elements h3{
+    font-size: 15px;
+    font-weight: 500;
+    margin: 10px;
+}
+.copyright{
+    color: gray;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 1280px) {
+    .leftNavbar{
+        display: none;
+    }
+
+}
